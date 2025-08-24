@@ -1,0 +1,129 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "addCandidate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "candidateCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "candidates",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voteCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_candidateId",
+						"type": "uint256"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Simple contract for adding candidates and voting.      Stores candidates in a mapping with auto-increment IDs.",
+			"kind": "dev",
+			"methods": {
+				"addCandidate(string)": {
+					"details": "Adds a new candidate with a unique ID.",
+					"params": {
+						"_name": "Name of the candidate."
+					}
+				},
+				"vote(uint256)": {
+					"details": "Allows voting for a candidate by ID.",
+					"params": {
+						"_candidateId": "Candidate's unique ID."
+					}
+				}
+			},
+			"title": "Voting Smart Contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"voting/voting.sol": "Voting"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"voting/voting.sol": {
+			"keccak256": "0x0c12d6265916d9b5ca61576a622d9f1064232b800034b22a5c2901fc7a2f7641",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://854668f65f3d36fc306b1180822367ca003d24694bdc4d55c990e9c2bde78c76",
+				"dweb:/ipfs/QmdkYt4uDBp34CeDEDy4SCGRH54wujF5j37NTVVu3NeGGV"
+			]
+		}
+	},
+	"version": 1
+}
