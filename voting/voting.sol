@@ -13,7 +13,7 @@ contract Voting {
         uint id;
         string name;
         uint voteCount;
-    }
+    }    
 
     // Mapping: candidateId => Candidate
     mapping(uint => Candidate) public candidates;

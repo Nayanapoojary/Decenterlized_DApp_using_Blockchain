@@ -10,7 +10,7 @@ contract Bank {
         require(amount > 0, "Amount must be greater than zero");
         balances[msg.sender] += amount;
         emit Deposit(msg.sender, amount);
-    }
+}
 
     function withdraw(uint256 amount) external {
         require(amount > 0, "Amount must be greater than zero");
